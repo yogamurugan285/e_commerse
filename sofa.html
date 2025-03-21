@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ninja boy mart/sofa</title>
+    <style>
+        * {
+            margin: 0%;
+            padding: 0%;
+            box-sizing: border-box;
+            
+        }
+        body {
+            
+            
+            background-color: #f8f8f8;
+            color: #333;
+    }
+
+        .header {
+
+            display: flex;
+            margin-right: 10px;
+            margin-left: 10px;
+            border-radius: 20px;
+            background-color: rgba(231, 229, 229, 0.743);
+            max-width: 100%;
+            width: auto;
+            height: 60px;
+            
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+
+        }
+
+        ul,
+        li {
+            display: inline;
+            color: black;
+
+
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        ul {
+            position: absolute;
+            right: 8%;
+            top: 3%;
+            font-size: 20px;
+
+        }
+
+        li {
+            margin: 40px;
+        }
+
+
+        .cart {
+            position: absolute;
+            margin-top: 0px;
+            right: 58%;
+            width: 26px;
+            height: 26px;
+        }
+
+        .login {
+            position: absolute;
+            margin-top: 0px;
+            right: 90%;
+            width: 26px;
+            height: 26px;
+        }
+
+        .contact {
+            position: absolute;
+            margin-top: 0px;
+            right: 28%;
+            width: 26px;
+            height: 26px;
+        }
+
+        .search {
+            position: absolute;
+            top: 3%;
+            left: 21%;
+            opacity: 0.6;
+            z-index: 1;
+            width: 26px;
+            height: 26px;
+        }
+
+        .ninja {
+            display: flex;
+            font-style: oblique;
+            font-size: 15px;
+            color: rgb(0, 255, 0);
+            position: absolute;
+            left: 3%;
+        }
+
+        .ninja sub {
+            font-size: 14px;
+            color: black;
+        }
+
+        .searchbar input {
+            padding-left: 40px;
+            position: absolute;
+            top: 2%;
+            left: 20%;
+            font-size: 15px;
+            background-color: rgba(143, 128, 128, 0.267);
+            width: 550px;
+            height: 35px;
+            border-radius: 12px;
+            border: hidden;
+            outline: transparent;
+            box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+        }
+
+        .searchbar input:focus {
+            border: 2px;
+            border-style: solid;
+            border-color: rgb(48, 48, 48);
+        }
+
+
+
+
+        .first-container {
+            margin-top: 20px;
+            margin-right: 10px;
+            margin-left: 10px;
+            display: grid;
+            border-radius: 20px;
+            max-width: 100%;
+            width: auto;
+            height: 130px;
+            background-color: rgba(143, 128, 128, 0.267);
+            grid-template-columns: repeat(9, 1fr);
+            justify-items: center;
+        }
+        .fc-1 img {
+            margin-top: 20px;
+            width: 80px;
+            height: 80px;
+            border-radius: 10px;
+            
+        }
+        .fc-1 img:hover{
+            transform: scale(1.1);
+            transition: transform 0.2s ease, opacity 0.5s ease;
+
+        }
+        .fc-1 h3 {
+            text-align: center;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            padding: 20px;
+            max-width: 1200px;
+            margin: auto;
+            column-gap: 30px;
+            
+        }
+
+        .gallery img {
+            padding: 20px;
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .gallery img:hover {
+            transform: scale(1.05);
+        }
+        .image222 .h13,.h14{
+            text-align: center;
+        }
+        h1{
+            margin-left: 20px;
+        }
+        h4{
+            
+            color: green;
+        }
+        .seventh-container {
+            margin-top: 20px;
+            margin-right: 10px;
+            margin-left: 10px;
+            display: grid;
+            border-radius: 20px;
+            max-width: 100%;
+            width: auto;
+            height: 300px;
+            background-color: rgba(34, 34, 34, 0.897);
+            grid-template-areas: 's71 s72 s73 s74 s75 s76';
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+        }
+
+        #s71,
+        #s72,
+        #s73,
+        #s74,
+        #s75,
+        #s76 {
+            color: white;
+            margin: 20px;
+            border-radius: 15px;
+        }
+
+        #h4 {
+            color: green;
+        }
+
+        .h55 {
+            margin-top: 20px;
+            color: grey;
+        }
+
+        .h555 {
+            margin-left: 10px;
+            color: #efe4e4eb;
+            margin: 5px;
+            font-size: small;
+
+        }
+
+        .eighth-container {
+            margin-top: 20px;
+            margin-right: 10px;
+            margin-left: 10px;
+            display: grid;
+            border-radius: 20px;
+            max-width: 100%;
+            width: auto;
+            height: 800px;
+            grid-template-rows: 100px 100px 100px 100px 100px 100px 100px 100px;
+            background-color: rgba(143, 128, 128, 0.267);
+        }
+
+        .h22 {
+            margin: 10px;
+            color: rgba(63, 63, 63, 0.816);
+            font-size: 15px;
+        }
+
+        .h222 {
+            margin-left: 30px;
+            color: rgba(56, 55, 55, 0.816);
+            margin-top: 0;
+        }
+
+        .eighth-container .h222 {
+            height: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <ul>
+            <a href="index.html">
+                <li >
+
+        <img class="login" src="icons/contact.png">Login</li>
+            </a>
+            <a href="home.html">
+                <li><img class="cart" src="icons/download (1).png" >Home </li>
+            </a>
+            <a href="#contact">
+                <li><img class="contact" src="icons/operator.png">contact</li>
+            </a>
+        </ul>
+        <pre class="ninja"><h1 >Ninjaboy</h1><sub>mart</sub></pre>
+        <div class="searchbar">
+            <img class="search" src="icons/search.png">
+            <input type="text" placeholder="Search a product">
+        </div>
+    </div>
+
+    <div class="first-container">
+        <div class="fc-1">
+            <a href="mobile.html"><img src="Mobiles/-original-imagtc5fz9spysyk.webp"></a>
+            <h3>Mobiles</h3>
+        </div>
+        <div class="fc-1">
+            <a href="laptop.html"><img src="laptop/g614jj-n3088ws-gaming-laptop-asus-original-imah26j379f7jh9v.webp"></a>
+            <h3>Lap top</h3>
+        </div>
+        <div class="fc-1">
+            <a href="smartwatch.html"><img src="smartwatch/-original-imah76jt64ffmwg4.webp"></a>
+            <h3>Smart watch</h3>
+        </div>
+        <div class="fc-1">
+            <a href="camera.html"><img src="camera/-original-imagrydmkxvjn2sh.webp"></a>
+            <h3>Camera</h3>
+        </div>
+        <div class="fc-1">
+            <a href="teddy.html"><img src="teddy/soft-toy-for-kidscombo-of-red-cap-and-someone-special-teddy-bear-original-imafzgjktfc4abdt.webp"></a>
+            <h3>Teddy</h3>
+        </div>
+        <div class="fc-1">
+            <a href="trone.html"><img src="trone/40-24-1-4k-wifi-dual-camera-drone-for-adults-kids-with-2-original-imagrfa6esxteknr.webp"></a>
+            <h3>Drone</h3>
+        </div>
+        <div class="fc-1">
+            <a href="tv.html"><img src="tv/jsw55gsqled-sansui-original-imah6s69phe5dvae.webp"></a>
+            <h3>Smart Tv</h3>
+        </div>
+        <div class="fc-1">
+            <a href="headphone.html"><img src="headphone/-original-imah5vxhawerd9gz.webp"></a>
+            <h3>Head Phone</h3>
+        </div>
+        <div class="fc-1">
+            <a href="dress.html"><img src="dress/xxl-6001-dress-new-zwerlon-original-imah2thfnsuj9ysw.webp"></a>
+            <h3>Dress</h3>
+        </div>
+    </div>
+    <h1>Sofa</h1>
+    <div class="gallery">
+        <div class="image222">
+            <img src="sofa/-original-imagntzb7phyg4dt.webp" alt="Image 1">
+            <h3 class="h13">Sofa set</h3>
+            <h4 class="h14">24,999/-</h4>
+        </div>
+        <div class="image222">
+            <img src="sofa/0-0-blue-chenille-3-2-2-1-182-88-0-0-40-0-0-taash004583-76-2-original-imahfzzzz6y3c3kg.webp" alt="Image 1">
+            <h3 class="h13">Blue sofa</h3>
+            <h4 class="h14">38,999/-</h4>
+        </div>
+        <div class="image222">
+            <img src="sofa/32-30-blue-grey-polyester-3-3-2-2-355-20-42-130-15-48-558-235-original-imagu28akszy3vnm.webp" alt="Image 1">
+            <h3 class="h13">Big sofa</h3>
+            <h4 class="h14">49,000/-</h4>
+        </div>
+        <div class="image222">
+            <img src="sofa/67-1-seater-rosewood-sheesham-125-25-r-963254-brown-wooden-original-imaggzkadxmjxt6g.webp" alt="Image 1">
+            <h3 class="h13">Gaming sofa</h3>
+            <h4 class="h14" >15,000/-</h4>
+        </div>
+        <div class="image222">
+            <img src="sofa/71-71-cream-cotton-blend-3-2-1-182-20-76-25-15-124-dw-ss-19-71-original-imah527yu9u62zjb.webp" alt="Image 1">
+            <h3 class="h13">Furniture</h3>
+            <h4  class="h14">23,499/-</h4>
+        </div>
+        <div class="image222">
+            <img src="sofa/74-93-0-beige-cotton-3-1-1-73-66-0-74-93-35-25-0-b08pvg7tx3-181-original-imahfpukf9euedcf.webp" alt="Image 1">
+            <h3 class="h13">Wood sofa</h3>
+            <h4  class="h14">19,799/-</h4>
+        </div>
+        <div class="image222">
+            <img src="sofa/247-180-light-grey-velvet-3-2-00-30-113-00-30-113-modern-sofa-original-imahfruqgh8whhux.webp" alt="Image 1">
+            <h3 class="h13">White sofa</h3>
+            <h4 class="h14">69,000/-</h4>
+        </div>
+        <div class="image222">
+            <img src="sofa/right-facing-63-5-na-jute-183-25-p-48-brownie-brown-40-64-original-imagau26dhzczxun.webp" alt="Image 1">
+            <h3 class="h13">Brown single sofa</h3>
+            <h4 class="h14">8,999/-</h4>
+        </div>
+        <div class="image222">
+            <img src="sofa/right-facing-76-peach-260-velvet-no-75-royal-peach-lifestyle-original-imah94hzcqezh3hj.webp" alt="Image 1">
+            <h3 class="h13">Pink</h3>
+            <h4 class="h14">38,999/-</h4>
+        </div>
+        <div class="image222">
+            <img src="sofa/right-facing-154-brown-200-na-no-50-rolando-rhs-4-seater-l-shape-original-imah7he4y3n87smk.webp" alt="Image 1">
+            <h3 class="h13">Brown</h3>
+            <h4 class="h14">26,999/-</h4>
+        </div>
+        <div class="image222">
+            <img src="sofa/right-facing-aqua-blue-floral-cotton-blend-no-bo-ss-32-bedoki-original-imah27ftkcf7vrbn.webp" alt="Image 1">
+            <h3 class="h13">Style sofa</h3>
+            <h4 class="h14">16,999/-</h4>
+        </div>
+        <div class="image222">
+            <img src="sofa/symmetrical-grey-chenille-888-flipkart-perfect-homes-black-grey-original-imag782zykdyx8sr.webp" alt="Image 1">
+            <h3 class="h13">Black and white</h3>
+            <h4 class="h14">26,999/-</h4>
+        </div>
+    </div>
+    <div class="eighth-container">
+        <div>
+            <h2 class="h22">No cost EMI</h2>
+            <p class="h222">No-cost EMI is a financing option that lets you buy something and pay for it in equal
+                monthly installments without any interest or processing fees. It's different from regular EMIs, where
+                you pay interest in addition to the price of the item.The "trick" behind no-cost EMIs is that merchants
+                or lenders absorb the interest cost, allowing them to advertise "zero interest" while still making a
+                profit, often through processing fees or by including the interest in the product's price</p>
+        </div>
+        <div>
+            <h2 class="h22">EMI on debit cards</h2>
+            <p class="h222">Debit Card EMI allows you to convert high-value purchases into monthly installments, similar
+                to credit card EMIs, without needing a credit card. You can choose a repayment tenure (3-24 months) and
+                the EMI amount is automatically deducted from your savings account.
+            <p>
+        </div>
+        <div>
+            <h2 class="h22">Mobile Exchange Offers</h2>
+            <p class="h222">Yes, you can likely exchange a phone you purchased on EMI, but it depends on the terms and
+                conditions of the exchange program and the specific retailer. You'll need to pay off any outstanding EMI
+                installments before exchanging the phone. </p>
+        </div>
+        <div>
+            <h2 class="h22">Electronics device and Accessories</h2>
+            <p class="h222">These accessories are sold separately from the electronic device and can include items such
+                as protective cases, screen protectors, chargers, headphones, speakers, styluses, memory cards, and
+                other peripherals.Calculators, digital watches, mobile phones, laptops, and computers are some of the
+                essential devices that we use in our daily lives. Apart from these devices, we use appliances like
+                television, refrigerators, air conditioners, micro ovens, mixers, blenders, grinders, and many more.
+            </p>
+        </div>
+        <div>
+            <h2 class="h22">Home and Furniture</h2>
+            <p class="h222">They typically include pieces such as chairs, tables, storage units, and desks. These
+                objects are usually kept in a house or other building to make it suitable or comfortable for living or
+                working in.Furniture refers to objects intended to support various human activities such as seating
+                (e.g.,
+                stools, chairs, and sofas), eating (tables), storing items, working, and sleeping (e.g., beds and
+                hammocks).
+            </p>
+        </div>
+        <div>
+            <h2 class="h22">Baby and Kids</h2>
+            <p class="h222">baby: during pregnancy, at birth and up to 1 year (learn more about how we use "baby" in the
+                A to Z of NHS health writing) toddler: 1 to 3 years. child: 4 to 12 years. teenager: 13 to 19 years.With
+                the best baby clothing brands in India like Nino Bambino, Mummamia, Little Kangaroos, Babyoye, and
+                FirstCry, you can rest assured that your little one will be dressed with love and care, ensuring their
+                comfort and happiness every step of the way.
+            </p>
+        </div>
+        <div>
+            <h2 class="h22">Television</h2>
+            <p class="h222">Television is a mass medium for advertising, entertainment, news, and sports. The medium is
+                capable of more than "radio broadcasting," which refers to an audio signal sent to radio receivers.</p>
+        </div>
+        <div>
+            <h2 class="h22">Books, Sports and Games</h2>
+            <p class="h222">Sports are specific physical activities one can compete in such as baseball, soccer,
+                football, field hockey, running, cycling, rock climbing, swimming, diving, race car driving, kayaking,
+                or weight lifting. There are many more games and sports than what is listed here. </p>
+
+        </div>
+
+    </div>
+    <div class="seventh-container" id="contact">
+        <div id="s71">
+            <h3 class="h55">About</h3><br>
+            <h4 class="h555">Contact Us</h4>
+            <h4 class="h555">About Us</h4>
+            <h4 class="h555">Careers</h4>
+            <h4 class="h555">Press</h4>
+            <h4 class="h555">Corporate Information</h4>
+
+        </div>
+        <div id="s72">
+            <h3 class="h55">Group Companies</h3><br>
+            <h4 class="h555">Myntra</h4>
+            <h4 class="h555">Shopsy</h4>
+            <h4 class="h555">Meesho</h4>
+            <h4 class="h555">Amazon</h4>
+
+        </div>
+        <div id="s73">
+            <h3 class="h55">Consumer Policy</h3><br>
+            <h4 class="h555">Cancellation & Returns</h4>
+            <h4 class="h555">Terms Of use</h4>
+            <h4 class="h555">Security</h4>
+            <h4 class="h555">Privacy</h4>
+            <h4 class="h555">Sitemap</h4>
+            <h4 class="h555">EPR Compliance</h4>
+            <h4 class="h555">Sitemap</h4>
+
+        </div>
+        <div id="s74">
+            <h3 class="h55">Contact</h3><br>
+            <h4 class="h555">8056037944</h4>
+            <h4 class="h555">yogamurugan285@gmail.com</h4>
+            <h4 class="h555"></h4>
+
+        </div>
+        <div id="s75">
+            <h3 class="h55">Mail us</h3><br>
+            <h4 class="h555">Ninja boy mart pvt limited,
+                2/296,Middle Street, Agaram, Tuticorin-628 152
+            </h4>
+
+
+        </div>
+        <div id="s76">
+            <h3 class="h55">Help</h3><br>
+            <h4 class="h555">Payments</h4>
+            <h4 class="h555">Shipping</h4>
+            <h4 class="h555">Cancellation & Returns</h4>
+            <h4 class="h555">FAQ</h4>
+        </div>
+
+    </div>
+
+</body>
+</html>
