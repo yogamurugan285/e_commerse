@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-                * {
+        * {
             margin: 0%;
             padding: 0%;
             box-sizing: border-box;
@@ -17,6 +17,117 @@
 
             background-color: #f8f8f8;
             color: #333;
+        }
+
+        .header {
+
+            display: flex;
+            margin-right: 10px;
+            margin-left: 10px;
+            border-radius: 20px;
+            background-color: rgba(231, 229, 229, 0.743);
+            max-width: 100%;
+            width: auto;
+            height: 60px;
+
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+
+        }
+
+        ul,
+        li {
+            display: inline;
+            color: black;
+
+
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        ul {
+            position: absolute;
+            right: 8%;
+            top: 3%;
+            font-size: 20px;
+
+        }
+
+        li {
+            margin: 40px;
+        }
+
+
+        .cart {
+            position: absolute;
+            margin-top: 0px;
+            right: 58%;
+            width: 26px;
+            height: 26px;
+        }
+
+        .login {
+            position: absolute;
+            margin-top: 0px;
+            right: 90%;
+            width: 26px;
+            height: 26px;
+        }
+
+        .contact {
+            position: absolute;
+            margin-top: 0px;
+            right: 28%;
+            width: 26px;
+            height: 26px;
+        }
+
+        .search {
+            position: absolute;
+            top: 3%;
+            left: 21%;
+            opacity: 0.6;
+            z-index: 1;
+            width: 26px;
+            height: 26px;
+        }
+
+        .ninja {
+            display: flex;
+            font-style: oblique;
+            font-size: 15px;
+            color: rgb(0, 255, 0);
+            position: absolute;
+            left: 3%;
+        }
+
+        .ninja sub {
+            font-size: 14px;
+            color: black;
+        }
+
+        .searchbar input {
+            padding-left: 40px;
+            position: absolute;
+            top: 2%;
+            left: 20%;
+            font-size: 15px;
+            background-color: rgba(143, 128, 128, 0.267);
+            width: 550px;
+            height: 35px;
+            border-radius: 12px;
+            border: hidden;
+            outline: transparent;
+            box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+        }
+
+        .searchbar input:focus {
+            border: 2px;
+            border-style: solid;
+            border-color: rgb(48, 48, 48);
         }
         @media (max-width: 600px) {
             .header {
