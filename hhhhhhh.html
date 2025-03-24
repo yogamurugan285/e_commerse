@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+                * {
+            margin: 0%;
+            padding: 0%;
+            box-sizing: border-box;
+
+        }
+
+        body {
+
+
+            background-color: #f8f8f8;
+            color: #333;
+        }
+        @media (max-width: 600px) {
+            
+        }
+        .header {
+
+            display: flex;
+            margin-right: 10px;
+            margin-left: 10px;
+            border-radius: 20px;
+            background-color: rgba(231, 229, 229, 0.743);
+            max-width: 100%;
+            width: auto;
+            height: 60px;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+
+        }
+
+        ul,
+        li {
+            display: inline;
+            color: black;
+
+
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        ul {
+            position: absolute;
+            right: 8%;
+            top: 2%;
+            font-size: 20px;
+
+        }
+
+        li {
+            margin:15px;
+        }
+
+
+        .cart {
+            position: absolute;
+            margin-top: 0px;
+            right: 60%;
+            width: 22px;
+            height: 20px;
+            
+        }
+
+        .login {
+            position: absolute;
+            margin-top: 0px;
+            right: 95%;
+            width: 20px;
+            height: 20px;
+        }
+
+        .contact {
+            position: absolute;
+            margin-top: 0px;
+            right: 28%;
+            width: 18px;
+            height: 18px;
+        }
+
+        .search {
+            position: absolute;
+            top: 2%;
+            left: 22%;
+            opacity: 0.6;
+            z-index: 1;
+            width: 18px;
+            height: 18px;
+        }
+
+        .ninja {
+            display: flex;
+            font-style: oblique;
+            font-size: 7px;
+            color: rgb(0, 255, 0);
+            position: absolute;
+            left: 3%;
+        }
+
+        .ninja sub {
+            font-size: 7px;
+            color: black;
+        }
+
+        .searchbar input {
+            padding-left: 40px;
+            position: absolute;
+            top:1.5%;
+            left: 20%;
+            font-size: 7px;
+            background-color: rgba(143, 128, 128, 0.267);
+            width: 160px;
+            height: 25px;
+            border-radius: 12px;
+            border: hidden;
+            outline: transparent;
+            box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+        }
+
+        .searchbar input:focus {
+            border: 2px;
+            border-style: solid;
+            border-color: rgb(48, 48, 48);
+        }
+.dl{
+    font-size: xx-small;
+}
+
+    </style>
+</head>
+<body>
+    <div class="header">
+        <ul>
+            <a href="index.html">
+                <li class="dl">
+
+                    <img class="login" src="icons/contact.png">Login
+                </li>
+            </a>
+            <a href="">
+                <li  class="dl"><img class="cart" src="icons/download (1).png">Home </li>
+            </a>
+            <a href="#contact">
+                <li  class="dl"><img class="contact" src="icons/operator.png">contact</li>
+            </a>
+        </ul>
+        <pre class="ninja"><h1 >Ninjaboy</h1><sub>mart</sub></pre>
+        <div class="searchbar">
+            <img class="search" src="icons/search.png">
+            <input type="text" placeholder="Search a product">
+        </div>
+    </div>
+</body>
+</html>
