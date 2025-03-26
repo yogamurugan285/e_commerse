@@ -79,6 +79,90 @@
             width: 260px;
             height: 44px;
         }
+        @media (max-width: 600px) {
+            body{
+            
+            height: 150vh;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-image: url(background/bg1.jpg);
+            flex-basis: 100%;
+        }
+        .ninja {
+            display: flex;
+            position: absolute;
+            font-style: oblique;
+            font-size: 10px;
+            color: rgb(4, 255, 0);
+            position: absolute;
+            left: 5%;
+        }
+
+        .ninja h2 {
+            color: black;
+        }
+
+        .box{
+            position: absolute;
+            top: 30%;
+            left: 15%;
+            width: 250px;
+            height: 200px;
+            background-color: rgba(0, 0, 0, 0.23);
+            color: white;
+            border-radius: 30px;
+            text-align: center;
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+        }
+        
+        .form{
+            
+            text-align:center;
+        }
+        .login{
+            font-size: 20px;
+        }
+        input{
+            width: 150px;
+            margin-top: 10px;
+            font-size: 10px;
+            color: rgb(0, 0, 0);
+            outline: transparent;
+            background-color: transparent;
+            border-color: white;
+            border-top: hidden;
+            border-left: hidden;
+            border-right: hidden;
+            
+        }
+        input:focus{
+            font-weight: 200px;
+            font-size: 15px;
+            color: rgb(0, 0, 0);
+            background-color: transparent;
+            border-top: hidden;
+            border-left: hidden;
+            border-right: hidden;
+        }
+        button{
+            
+            font-size: 10px;
+            width: 150px;
+            height: 30px;
+            border: hidden;
+            border-radius: 10px;
+        }
+        button:hover{
+            transition: 0.2s;
+            width: 170px;
+            height: 35px;
+        }
+        .login1{
+            position: absolute;
+            top: 70%;
+            left: 20%;
+        }
+        }
 
     </style>
 </head>
@@ -87,10 +171,10 @@
     </h1></pre>
     <div class="box">
         <form class="form" action="home.html">
-        <h1>Login</h1>
+        <h1 class="login">Login</h1>
         <input type="text" placeholder="Username" required><br><br>
         <input type="password" placeholder="Password" required><br><br><br><br>
-        <button>Log in</button>
+        <button class="login1">Log in</button>
         </form>
 
     </div>
