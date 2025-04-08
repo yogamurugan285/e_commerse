@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
     <title>Ninja boy mart</title>
 
     <style>
@@ -177,21 +177,19 @@
             margin-left: 10px;
             border-radius: 20px;
             max-width: 100%;
-            overflow: hidden;
             height: 250px;
-            position: relative;
             width: 100%;
-            /* 4 images * 500px */
-
             background-color: rgba(143, 128, 128, 0.267);
-        }
 
+        }
         .sc-1 {
             display: flex;
             width: 100%;
             animation: slide 18s infinite linear;
 
         }
+
+
 
         .sc-1 img {
             border-radius: 20px;
@@ -779,25 +777,19 @@
 
         .second-container {
             margin-top: 20px;
-            margin-right: 10px;
             margin-left: 10px;
             border-radius: 20px;
             max-width: 100%;
-            overflow: hidden;
             height: 120px;
-            position: relative;
             width: 100%;
+            overflow-x: auto; /* Enable horizontal scrolling */
+            white-space: nowrap; /* Keep images in a single row */
+            scroll-behavior: smooth;
             
 
             background-color: rgba(143, 128, 128, 0.267);
         }
 
-        .sc-1 {
-            display: flex;
-            width: 100%;
-            animation: slide 18s infinite linear;
-
-        }
 
         .sc-1 img {
             border-radius: 20px;
@@ -805,6 +797,13 @@
             height: 120px;
 
         }
+        .sc-1 {
+            display: flex;
+            width: 100%;
+            animation: slide 18s infinite linear;
+
+        }
+
 
         @keyframes slide {
             0% {
@@ -1278,7 +1277,8 @@
             </a>
         </ul>
         <pre class="ninja"><h1 >Ninjaboy</h1><sub>mart</sub></pre>
-        <form class="searchbar" action="/search" method="get">
+
+        <form class="searchbar" action="toys.html" method="get">
             <img class="search" src="icons/search.png">
             <input type="text" placeholder="Search a product">
         </form>
@@ -1329,9 +1329,7 @@
         <div class="sc-1">
             <img src="banner/4c2c108d39bcfbe6.webp">
             <img src="banner/5dbe24535d092e63.webp">
-
-
-        </div>
+    </div>
     </div>
     <div class="third-container">
         <div id="tc-1">
